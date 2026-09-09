@@ -14,23 +14,34 @@
   <!-- Desktop Environment -->
   <div id="desktop">
     
-    <!-- Desktop Shortcuts -->
+    <!-- Desktop Shortcuts with Vector Graphics -->
     <div class="shortcut-grid">
       <div class="shortcut" onclick="openWindow('word-window')">
-        <img src="88a/02m/45w.png" alt="Word" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><rect width=\'48\' height=\'48\' fill=\'%23185abd\'/><text x=\'50%\' y=\'55%\' font-size=\'24\' fill=\'white\' font-family=\'sans-serif\' text-anchor=\'middle\' dominant-baseline=\'middle\'>W</text></svg>'">
+        <svg width="48" height="48" viewBox="0 0 48 48" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+          <rect width="48" height="48" fill="#185abd" rx="8"/>
+          <path d="M 14 12 L 20 36 L 25 20 L 30 36 L 36 12" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
         <span>Word Clone</span>
       </div>
+
       <div class="shortcut" onclick="openWindow('excel-window')">
-        <img src="88a/02m/67x.png" alt="Excel" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><rect width=\'48\' height=\'48\' fill=\'%23107c41\'/><text x=\'50%\' y=\'55%\' font-size=\'24\' fill=\'white\' font-family=\'sans-serif\' text-anchor=\'middle\' dominant-baseline=\'middle\'>X</text></svg>'">
+        <svg width="48" height="48" viewBox="0 0 48 48" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+          <rect width="48" height="48" fill="#107c41" rx="8"/>
+          <path d="M 14 12 L 34 36 M 34 12 L 14 36" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
         <span>Excel Clone</span>
       </div>
+
       <div class="shortcut" onclick="openWindow('ppt-window')">
-        <img src="88a/02m/89p.png" alt="PowerPoint" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><rect width=\'48\' height=\'48\' fill=\'%23c4391d\'/><text x=\'50%\' y=\'55%\' font-size=\'24\' fill=\'white\' font-family=\'sans-serif\' text-anchor=\'middle\' dominant-baseline=\'middle\'>P</text></svg>'">
+        <svg width="48" height="48" viewBox="0 0 48 48" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+          <rect width="48" height="48" fill="#c4391d" rx="8"/>
+          <path d="M 16 12 L 26 12 C 32 12 32 24 26 24 L 16 24 Z M 16 24 L 16 36" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
         <span>PowerPoint</span>
       </div>
     </div>
 
-    <!-- Active App Windows Containers (populated in upcoming files) -->
+    <!-- Active App Windows Containers -->
     <div id="window-container"></div>
 
   </div>
@@ -38,7 +49,13 @@
   <!-- Taskbar -->
   <div id="taskbar">
     <button id="start-btn" onclick="toggleStartMenu()">
-      <div class="win-icon"></div>
+      <!-- Windows-style Logo SVG -->
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff">
+        <rect x="0" y="0" width="7.5" height="7.5"/>
+        <rect x="8.5" y="0" width="7.5" height="7.5"/>
+        <rect x="0" y="8.5" width="7.5" height="7.5"/>
+        <rect x="8.5" y="8.5" width="7.5" height="7.5"/>
+      </svg>
       <span>Start</span>
     </button>
     <div id="taskbar-apps"></div>
@@ -51,13 +68,13 @@
   <div id="start-menu" class="hidden">
     <div class="start-header">System Launcher</div>
     <div class="start-items">
-      <div class="start-item" onclick="openWindow('word-window')">Document Editor (45w)</div>
-      <div class="start-item" onclick="openWindow('excel-window')">Spreadsheet Engine (67x)</div>
-      <div class="start-item" onclick="openWindow('ppt-window')">Presentation Deck (89p)</div>
+      <div class="start-item" onclick="openWindow('word-window')">📄 Document Editor (45w)</div>
+      <div class="start-item" onclick="openWindow('excel-window')">📊 Spreadsheet Engine (67x)</div>
+      <div class="start-item" onclick="openWindow('ppt-window')">📊 Presentation Deck (89p)</div>
     </div>
   </div>
 
-  <!-- Core Scripts -->
+  <!-- Core Scripts (All subfolder paths corrected) -->
   <script src="94x/01a.js"></script>
   <script src="94x/02b.js"></script>
   <script src="94x/33f/45w.js"></script>
