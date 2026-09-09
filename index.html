@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web OS</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="12k/45h.css">
+  <link rel="stylesheet" href="12k/92m.css">
+  <link rel="stylesheet" href="12k/10x.css">
+</head>
+<body>
+
+  <!-- Desktop Environment -->
+  <div id="desktop">
+    
+    <!-- Desktop Shortcuts -->
+    <div class="shortcut-grid">
+      <div class="shortcut" onclick="openWindow('word-window')">
+        <img src="88a/02m/45w.png" alt="Word" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><rect width=\'48\' height=\'48\' fill=\'%23185abd\'/><text x=\'50%\' y=\'55%\' font-size=\'24\' fill=\'white\' font-family=\'sans-serif\' text-anchor=\'middle\' dominant-baseline=\'middle\'>W</text></svg>'">
+        <span>Word Clone</span>
+      </div>
+      <div class="shortcut" onclick="openWindow('excel-window')">
+        <img src="88a/02m/67x.png" alt="Excel" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><rect width=\'48\' height=\'48\' fill=\'%23107c41\'/><text x=\'50%\' y=\'55%\' font-size=\'24\' fill=\'white\' font-family=\'sans-serif\' text-anchor=\'middle\' dominant-baseline=\'middle\'>X</text></svg>'">
+        <span>Excel Clone</span>
+      </div>
+      <div class="shortcut" onclick="openWindow('ppt-window')">
+        <img src="88a/02m/89p.png" alt="PowerPoint" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\'><rect width=\'48\' height=\'48\' fill=\'%23c4391d\'/><text x=\'50%\' y=\'55%\' font-size=\'24\' fill=\'white\' font-family=\'sans-serif\' text-anchor=\'middle\' dominant-baseline=\'middle\'>P</text></svg>'">
+        <span>PowerPoint</span>
+      </div>
+    </div>
+
+    <!-- Active App Windows Containers (populated in upcoming files) -->
+    <div id="window-container"></div>
+
+  </div>
+
+  <!-- Taskbar -->
+  <div id="taskbar">
+    <button id="start-btn" onclick="toggleStartMenu()">
+      <div class="win-icon"></div>
+      <span>Start</span>
+    </button>
+    <div id="taskbar-apps"></div>
+    <div id="system-tray">
+      <span id="clock">00:00 AM</span>
+    </div>
+  </div>
+
+  <!-- Start Menu -->
+  <div id="start-menu" class="hidden">
+    <div class="start-header">System Launcher</div>
+    <div class="start-items">
+      <div class="start-item" onclick="openWindow('word-window')">Document Editor (45w)</div>
+      <div class="start-item" onclick="openWindow('excel-window')">Spreadsheet Engine (67x)</div>
+      <div class="start-item" onclick="openWindow('ppt-window')">Presentation Deck (89p)</div>
+    </div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="94x/01a.js"></script>
+  <script src="94x/02b.js"></script>
+  <script src="94x/33f/45w.js"></script>
+  <script src="94x/33f/67x.js"></script>
+  <script src="94x/33f/89p.js"></script>
+</body>
+</html>
