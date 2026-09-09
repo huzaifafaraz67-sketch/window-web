@@ -1,0 +1,138 @@
+/* App Workspace Base Layout */
+.app-workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #f3f3f3;
+  color: #333333;
+}
+
+/* Common App Ribbon / Toolbar */
+.app-ribbon {
+  height: 38px;
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: 6px;
+}
+
+.ribbon-btn {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ribbon-btn:hover {
+  background: #e0e0e0;
+}
+
+.ribbon-btn.bold { font-weight: bold; }
+.ribbon-btn.italic { font-style: italic; }
+
+.app-canvas {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 12px;
+}
+
+/* 45w - Word Document View */
+.doc-editor {
+  background: #ffffff;
+  min-height: 100%;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  outline: none;
+  font-family: 'Calibri', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 67x - Excel Spreadsheet Table */
+.sheet-grid-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.sheet-table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #ffffff;
+  font-size: 12px;
+}
+
+.sheet-table th, .sheet-table td {
+  border: 1px solid #d3d3d3;
+  min-width: 65px;
+  height: 24px;
+  text-align: left;
+  padding: 0 4px;
+}
+
+.sheet-table th {
+  background: #f0f0f0;
+  text-align: center;
+  font-weight: 600;
+  color: #555555;
+}
+
+.sheet-table td input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+}
+
+.sheet-table td input:focus {
+  background: #e8f2fe;
+}
+
+/* 89p - PowerPoint Slide Editor */
+.slide-workspace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #e5e5e5;
+}
+
+.slide-canvas {
+  width: 480px;
+  height: 270px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-title-input {
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px dashed transparent;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.slide-title-input:hover, .slide-title-input:focus {
+  border-color: #0078d4;
+}
